@@ -1,23 +1,18 @@
 #include<stdio.h>
 #include<string.h>
 
-
 int main () {
 
-    // Create A New String
+    // Create a new string
     // Problem link: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/A
 
-    char s[1001];
-    char t[1001];
+    char s[1000];
+    char t[1000];
 
-    gets(s);
-    gets(t);
+    scanf("%s %s", s, t);
 
-    int s_len = strlen(s);
-    int t_len = strlen(t);
-
-    printf("%d %d\n", s_len, t_len);
-    printf("%s %s", s, t);
+    printf("%d %d\n", strlen(s), strlen(t));
+    printf("%s %s\n", s, t);
 
     return 0;
 }
